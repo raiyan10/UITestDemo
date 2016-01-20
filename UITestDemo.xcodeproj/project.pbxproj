@@ -13,7 +13,19 @@
 		AC1635791C48CDDB00734E18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC1635771C48CDDB00734E18 /* Main.storyboard */; };
 		AC16357B1C48CDDB00734E18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC16357A1C48CDDB00734E18 /* Assets.xcassets */; };
 		AC16357E1C48CDDB00734E18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC16357C1C48CDDB00734E18 /* LaunchScreen.storyboard */; };
+		AC1635871C48CFE200734E18 /* NameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC1635861C48CFE200734E18 /* NameViewController.m */; settings = {ASSET_TAGS = (); }; };
+		AC16358F1C48D39D00734E18 /* UITestDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = AC16358E1C48D39D00734E18 /* UITestDemoUITests.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AC1635911C48D39F00734E18 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC1635631C48CDDB00734E18 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC16356A1C48CDDB00734E18;
+			remoteInfo = UITestDemo;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		AC16356B1C48CDDB00734E18 /* UITestDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UITestDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,10 +38,22 @@
 		AC16357A1C48CDDB00734E18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC16357D1C48CDDB00734E18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC16357F1C48CDDB00734E18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC1635851C48CFE200734E18 /* NameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NameViewController.h; sourceTree = "<group>"; };
+		AC1635861C48CFE200734E18 /* NameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NameViewController.m; sourceTree = "<group>"; };
+		AC16358C1C48D39A00734E18 /* UITestDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UITestDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC16358E1C48D39D00734E18 /* UITestDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UITestDemoUITests.m; sourceTree = "<group>"; };
+		AC1635901C48D39F00734E18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		AC1635681C48CDDB00734E18 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC1635891C48D39800734E18 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -43,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				AC16356D1C48CDDB00734E18 /* UITestDemo */,
+				AC16358D1C48D39C00734E18 /* UITestDemoUITests */,
 				AC16356C1C48CDDB00734E18 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				AC16356B1C48CDDB00734E18 /* UITestDemo.app */,
+				AC16358C1C48D39A00734E18 /* UITestDemoUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -62,6 +88,8 @@
 				AC1635721C48CDDB00734E18 /* AppDelegate.m */,
 				AC1635741C48CDDB00734E18 /* ViewController.h */,
 				AC1635751C48CDDB00734E18 /* ViewController.m */,
+				AC1635851C48CFE200734E18 /* NameViewController.h */,
+				AC1635861C48CFE200734E18 /* NameViewController.m */,
 				AC1635771C48CDDB00734E18 /* Main.storyboard */,
 				AC16357A1C48CDDB00734E18 /* Assets.xcassets */,
 				AC16357C1C48CDDB00734E18 /* LaunchScreen.storyboard */,
@@ -77,6 +105,15 @@
 				AC16356F1C48CDDB00734E18 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AC16358D1C48D39C00734E18 /* UITestDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AC16358E1C48D39D00734E18 /* UITestDemoUITests.m */,
+				AC1635901C48D39F00734E18 /* Info.plist */,
+			);
+			path = UITestDemoUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -99,6 +136,24 @@
 			productReference = AC16356B1C48CDDB00734E18 /* UITestDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
+		AC16358B1C48D39800734E18 /* UITestDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC1635931C48D3A100734E18 /* Build configuration list for PBXNativeTarget "UITestDemoUITests" */;
+			buildPhases = (
+				AC1635881C48D39800734E18 /* Sources */,
+				AC1635891C48D39800734E18 /* Frameworks */,
+				AC16358A1C48D39800734E18 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AC1635921C48D39F00734E18 /* PBXTargetDependency */,
+			);
+			name = UITestDemoUITests;
+			productName = UITestDemoUITests;
+			productReference = AC16358C1C48D39A00734E18 /* UITestDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -110,6 +165,10 @@
 				TargetAttributes = {
 					AC16356A1C48CDDB00734E18 = {
 						CreatedOnToolsVersion = 7.0.1;
+					};
+					AC16358B1C48D39800734E18 = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = AC16356A1C48CDDB00734E18;
 					};
 				};
 			};
@@ -127,6 +186,7 @@
 			projectRoot = "";
 			targets = (
 				AC16356A1C48CDDB00734E18 /* UITestDemo */,
+				AC16358B1C48D39800734E18 /* UITestDemoUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -142,6 +202,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AC16358A1C48D39800734E18 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -152,10 +219,27 @@
 				AC1635761C48CDDB00734E18 /* ViewController.m in Sources */,
 				AC1635731C48CDDB00734E18 /* AppDelegate.m in Sources */,
 				AC1635701C48CDDB00734E18 /* main.m in Sources */,
+				AC1635871C48CFE200734E18 /* NameViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC1635881C48D39800734E18 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC16358F1C48D39D00734E18 /* UITestDemoUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AC1635921C48D39F00734E18 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AC16356A1C48CDDB00734E18 /* UITestDemo */;
+			targetProxy = AC1635911C48D39F00734E18 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		AC1635771C48CDDB00734E18 /* Main.storyboard */ = {
@@ -281,6 +365,30 @@
 			};
 			name = Release;
 		};
+		AC1635941C48D3A100734E18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = UITestDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bs.UITestDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = UITestDemo;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		AC1635951C48D3A100734E18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = UITestDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bs.UITestDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = UITestDemo;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -298,6 +406,14 @@
 			buildConfigurations = (
 				AC1635831C48CDDB00734E18 /* Debug */,
 				AC1635841C48CDDB00734E18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AC1635931C48D3A100734E18 /* Build configuration list for PBXNativeTarget "UITestDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC1635941C48D3A100734E18 /* Debug */,
+				AC1635951C48D3A100734E18 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

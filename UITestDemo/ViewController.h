@@ -10,6 +10,9 @@
 
 @interface ViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UITextField *nameTextField;
+
+- (IBAction)submitName:(id)sender;
 
 @end
 

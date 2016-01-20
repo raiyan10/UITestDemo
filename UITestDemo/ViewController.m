@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "NameViewController.h"
 
 @interface ViewController ()
 
@@ -14,14 +15,46 @@
 
 @implementation ViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)submitName:(id)sender
+{
+    [self.nameTextField resignFirstResponder];
+    [self verifyEmptyTextField];
+}
+
+- (void) verifyEmptyTextField
+{
+    NSCharacterSet *set = [NSCharacterSet whitespaceAndNewlineCharacterSet];
+    NSString *nameText = [self.nameTextField.text stringByTrimmingCharactersInSet:set];
+    
+    if (nameText.length > 0)
+    {
+        [self proceedToNextPage];
+    }
+    else
+    {
+        UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Empty field" message:@"Enter your name" preferredStyle:UIAlertControllerStyleAlert];
+        
+        UIAlertAction *ok = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil];
+        [alertController addAction:ok];
+        
+        [self presentViewController:alertController animated:YES completion:nil];
+    }
+}
+
+- (void) proceedToNextPage
+{
+    UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    
+    NameViewController *nameViewController = [storyBoard instantiateViewControllerWithIdentifier:@"NameViewController"];
+    nameViewController.name = self.nameTextField.text;
+    
+    [self.navigationController pushViewController:nameViewController animated:YES];
 }
 
 @end
